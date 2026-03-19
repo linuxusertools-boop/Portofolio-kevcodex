@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>𝗞𝗘𝗩𝗖𝗢𝗗𝗘𝗫 ✦ 𝗣𝗥𝗢𝗙𝗜𝗟𝗘</title>
+    <title>𝗞𝗘𝗩𝗖𝗢𝗗𝗘𝗫 ✦</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -23,7 +23,7 @@
             transition: opacity 4s ease-in-out;
         }
 
-        /* Power Button */
+        /* Power Button Section */
         .power-btn {
             position: relative; width: 85px; height: 85px;
             border-radius: 50%; background: transparent;
@@ -39,7 +39,7 @@
         .power-icon { fill: #fff; width: 30px; height: 30px; transition: all 0.5s; opacity: 0.4; }
         .power-btn:hover .power-icon { fill: #22d3ee; opacity: 1; filter: drop-shadow(0 0 8px #22d3ee); }
 
-        /* Banner */
+        /* Banner & Profile */
         .banner-container {
             width: 92%; max-width: 1000px; height: 350px;
             overflow: hidden; border-radius: 16px;
@@ -58,7 +58,7 @@
         }
         .banner-image { position: relative; z-index: 2; height: 92%; width: auto; max-width: 92%; object-fit: contain; border-radius: 8px; }
 
-        /* SHIZA Rectangle Definition */
+        /* PERSEGI PANJANG - SHIZA DEFINITION */
         .shiza-rect {
             width: 92%; max-width: 800px; margin-top: 2.5rem;
             background: linear-gradient(90deg, rgba(34, 211, 238, 0.08), transparent);
@@ -96,79 +96,36 @@
             position: relative; overflow: hidden;
             transition: all 0.5s ease; cursor: pointer; text-decoration: none;
         }
-        .ai-card:hover { 
-            border-color: #22d3ee; 
-            box-shadow: 0 0 40px rgba(34, 211, 238, 0.15);
-            transform: translateY(-5px);
-        }
-        .ai-logo {
-            width: 100px; height: 100px; border-radius: 15px;
-            object-fit: cover; border: 2px solid rgba(34, 211, 238, 0.5);
-            box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
-        }
+        .ai-card:hover { border-color: #22d3ee; box-shadow: 0 0 40px rgba(34, 211, 238, 0.15); transform: translateY(-5px); }
+        .ai-logo { width: 100px; height: 100px; border-radius: 15px; object-fit: cover; border: 2px solid rgba(34, 211, 238, 0.5); box-shadow: 0 0 20px rgba(34, 211, 238, 0.3); }
         .ai-info { flex: 1; text-align: left; }
-        .ai-badge { 
-            font-size: 8px; background: #22d3ee; color: #000; 
-            padding: 2px 8px; border-radius: 4px; font-weight: 900;
-            letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; display: inline-block;
-        }
+        .ai-badge { font-size: 8px; background: #22d3ee; color: #000; padding: 2px 8px; border-radius: 4px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; display: inline-block; }
         .ai-name { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 0.25rem; }
         .ai-tagline { font-size: 11px; color: #22d3ee; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 0.75rem; }
         .ai-desc { font-size: 12px; color: #94a3b8; line-height: 1.5; }
 
-        /* Thanks List (Vertical) */
-        .thanks-list {
-            display: flex; flex-direction: column; gap: 1.25rem;
-            width: 92%; max-width: 750px; margin-top: 3rem;
-        }
-        .thanks-card {
-            background: linear-gradient(to right, rgba(255, 255, 255, 0.03), transparent);
-            border-left: 2px solid rgba(34, 211, 238, 0.2);
-            padding: 1.5rem; border-radius: 0 12px 12px 0; text-align: left;
-            transition: all 0.4s ease;
-        }
-        .thanks-card:hover { 
-            background: linear-gradient(to right, rgba(34, 211, 238, 0.08), transparent); 
-            border-left-color: #22d3ee; transform: translateX(10px);
-        }
+        /* Thanks List */
+        .thanks-list { display: flex; flex-direction: column; gap: 1.25rem; width: 92%; max-width: 750px; margin-top: 3rem; }
+        .thanks-card { background: linear-gradient(to right, rgba(255, 255, 255, 0.03), transparent); border-left: 2px solid rgba(34, 211, 238, 0.2); padding: 1.5rem; border-radius: 0 12px 12px 0; text-align: left; transition: all 0.4s ease; }
+        .thanks-card:hover { background: linear-gradient(to right, rgba(34, 211, 238, 0.08), transparent); border-left-color: #22d3ee; transform: translateX(10px); }
         .thanks-title { font-size: 9px; color: #22d3ee; font-weight: 800; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 0.4rem; }
         .thanks-name { font-size: 18px; font-weight: 800; color: #fff; margin-bottom: 0.4rem; }
         .thanks-desc { font-size: 12px; color: #64748b; line-height: 1.6; max-width: 600px; }
 
-        /* Support Contact */
-        .contact-section {
-            display: flex; flex-direction: column; gap: 1rem;
-            width: 92%; max-width: 750px; margin-top: 3rem;
-        }
-        .contact-item {
-            display: flex; align-items: center; gap: 1.5rem;
-            background: rgba(255,255,255,0.02);
-            padding: 1rem 1.5rem; border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: all 0.3s ease; text-decoration: none;
-        }
-        .contact-item:hover { border-color: #22d3ee; background: rgba(34, 211, 238, 0.05); transform: scale(1.02); }
-        .contact-icon { font-size: 20px; color: #22d3ee; width: 30px; text-align: center; }
-        .contact-info { display: flex; flex-direction: column; text-align: left; }
-        .contact-label { font-size: 9px; text-transform: uppercase; color: #64748b; font-weight: 800; letter-spacing: 0.2em; }
-        .contact-value { font-size: 14px; color: #fff; font-weight: 600; }
-
-        /* Responsive Fixes */
+        /* Responsive */
         @media (max-width: 640px) {
-            .shiza-rect { flex-direction: column; text-align: center; padding: 1.5rem; }
+            .shiza-rect { flex-direction: column; text-align: center; gap: 0.5rem; padding: 1.5rem; }
             .rect-separator { display: none; }
-            .rect-definition { text-align: center; font-size: 10px; }
             .ai-card { flex-direction: column; text-align: center; padding: 1.5rem; }
             .ai-info { text-align: center; }
         }
 
-        /* Helpers */
+        /* Animations & Helpers */
         .fade-out { opacity: 0; pointer-events: none; transition: 2s ease-in-out; }
         .fade-in { opacity: 1 !important; }
         .text-glow { text-shadow: 0 0 30px rgba(34, 211, 238, 0.5); }
         .boot-text { animation: blink 2.5s infinite; }
         @keyframes blink { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.7; } }
-        
         #mainUI { overflow-y: auto; scrollbar-width: none; }
         #mainUI::-webkit-scrollbar { display: none; }
     </style>
@@ -207,7 +164,7 @@
             </div>
 
             <div class="max-w-[750px] mt-10 px-6 text-[12px] md:text-[14px] text-slate-400 font-medium tracking-wide leading-relaxed">
-                <p><span class="text-cyan-400 font-bold">Kevcodex</span> adalah seorang programmer yang ahli dalam merancang kode sumber untuk menciptakan ekosistem digital yang inovatif.</p>
+                <p><span class="text-cyan-400 font-bold">Kevcodex</span> adalah seorang programmer ahli dalam merancang kode sumber untuk menciptakan ekosistem digital inovatif.</p>
             </div>
 
             <div class="shiza-rect">
@@ -226,8 +183,6 @@
                     <div class="tech-item"><i class="fab fa-react"></i> React</div>
                     <div class="tech-item"><i class="fab fa-python"></i> Python</div>
                     <div class="tech-item"><i class="fab fa-js"></i> JavaScript</div>
-                    <div class="tech-item"><i class="fab fa-php"></i> PHP</div>
-                    <div class="tech-item"><i class="fab fa-node-js"></i> Node.js</div>
                 </div>
             </div>
 
@@ -239,7 +194,7 @@
                         <span class="ai-badge">Future Tech</span>
                         <div class="ai-name">𝗦𝗛𝗜𝗦𝗔-𝗫 ✦</div>
                         <div class="ai-tagline">AI Berperasaan</div>
-                        <p class="ai-desc">Artificial Intelligence yang dikembangkan oleh <span class="text-white font-bold">Kevcodex</span> dengan integrasi emosional tingkat lanjut.</p>
+                        <p class="ai-desc">Artificial Intelligence yang dikembangkan oleh <span class="text-white font-bold">Kevcodex</span> menggunakan teknologi masa depan.</p>
                     </div>
                 </a>
             </div>
@@ -250,7 +205,7 @@
                     <div class="thanks-card">
                         <div class="thanks-title">The Almighty</div>
                         <div class="thanks-name text-glow">ALLAH SWT</div>
-                        <p class="thanks-desc">The Almighty, the Most Merciful, whose blessings have made everything possible.</p>
+                        <p class="thanks-desc">The Almighty, the Most Merciful, whose blessings made everything possible.</p>
                     </div>
                     <div class="thanks-card">
                         <div class="thanks-title">Project Owner</div>
@@ -260,25 +215,11 @@
                 </div>
             </div>
 
-            <div class="mt-24 flex flex-col items-center w-full">
-                <h2 class="text-[10px] tracking-[1.2em] text-cyan-500/50 font-black uppercase mb-10">Kontak Support</h2>
-                <div class="contact-section">
-                    <a href="https://t.me/kevcodex" class="contact-item" target="_blank">
-                        <i class="fab fa-telegram contact-icon"></i>
-                        <div class="contact-info">
-                            <span class="contact-label">Telegram</span>
-                            <span class="contact-value">t.me/kevcodex</span>
-                        </div>
-                    </a>
-                </div>
+            <div class="mt-24 mb-20 flex flex-col items-center w-full">
+                <h2 class="text-[10px] tracking-[1.2em] text-cyan-500/50 font-black uppercase mb-10">Support</h2>
+                <a href="https://t.me/kevcodex" class="text-white bg-white/5 border border-white/10 px-8 py-3 rounded-full hover:border-cyan-400 transition-all uppercase text-[9px] tracking-[0.3em] font-bold">Hubungi Telegram</a>
             </div>
 
-            <div class="mt-20 mb-10 flex gap-8">
-                <div class="flex flex-col items-center group cursor-pointer">
-                    <span class="text-[7px] text-slate-500 tracking-[0.4em] uppercase mb-2 group-hover:text-cyan-400 transition-colors">Workspace</span>
-                    <div class="h-[1px] w-6 bg-cyan-900 group-hover:w-10 group-hover:bg-cyan-500 transition-all"></div>
-                </div>
-            </div>
         </main>
 
         <footer class="pb-10 text-[7px] tracking-[0.8em] text-slate-800 uppercase font-black">
@@ -296,14 +237,12 @@
         let isRunning = false;
 
         function fadeInAudio(audioElement, targetVolume, duration) {
-            audioElement.volume = 0;
-            audioElement.play();
+            audioElement.volume = 0; audioElement.play();
             let start = null;
             function step(timestamp) {
                 if (!start) start = timestamp;
                 let progress = timestamp - start;
-                let val = Math.min((progress / duration) * targetVolume, targetVolume);
-                audioElement.volume = val;
+                audioElement.volume = Math.min((progress / duration) * targetVolume, targetVolume);
                 if (progress < duration) window.requestAnimationFrame(step);
             }
             window.requestAnimationFrame(step);
@@ -324,14 +263,11 @@
 
         // AUTO-MUTE FEATURE
         document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                bgm.pause();
-            } else {
-                if (isRunning) bgm.play();
-            }
+            if (document.hidden) { bgm.pause(); } 
+            else { if (isRunning) bgm.play(); }
         });
 
-        // Starfield & Meteor Logic
+        // BACKGROUND ANIMATION (STARFIELD & METEORS)
         let width, height, stars = [], meteors = [];
         function init() {
             width = canvas.width = window.innerWidth;
@@ -359,18 +295,15 @@
             draw() {
                 ctx.save();
                 let grad = ctx.createLinearGradient(this.x, this.y, this.x + this.length, this.y - this.length);
-                grad.addColorStop(0, 'rgba(255, 255, 255, 0.9)'); 
-                grad.addColorStop(0.1, '#22d3ee'); 
-                grad.addColorStop(1, 'transparent');
-                ctx.strokeStyle = grad; ctx.lineWidth = this.size; ctx.lineCap = 'round';
-                ctx.beginPath(); ctx.moveTo(this.x, this.y); ctx.lineTo(this.x + this.length, this.y - this.length); ctx.stroke();
-                ctx.restore();
+                grad.addColorStop(0, 'rgba(34, 211, 238, 0.9)'); grad.addColorStop(1, 'transparent');
+                ctx.strokeStyle = grad; ctx.lineWidth = this.size; ctx.beginPath();
+                ctx.moveTo(this.x, this.y); ctx.lineTo(this.x + this.length, this.y - this.length);
+                ctx.stroke(); ctx.restore();
             }
         }
 
         function animate() {
-            ctx.fillStyle = '#020617';
-            ctx.fillRect(0, 0, width, height);
+            ctx.fillStyle = '#020617'; ctx.fillRect(0, 0, width, height);
             stars.forEach(s => {
                 ctx.globalAlpha = s.opacity; ctx.fillStyle = '#64748b';
                 ctx.beginPath(); ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2); ctx.fill();
